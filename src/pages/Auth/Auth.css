@@ -1,0 +1,44 @@
+.form__main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__block {
+  width: 250px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+  border-radius: 12px;
+  padding: 25px;
+  background-color: lightblue;
+}
+.form__name {
+  text-align: center;
+}
+
+.form__input_login,
+.form__input_password {
+  margin: 5px 0;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 241px;
+}
+
+.form__buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.form__forgetPass {
+  margin-top: 10px;
+  text-align: center;
+}
+input[type="submit"] {
+  padding: 10px;
+  background: #3369F3;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
