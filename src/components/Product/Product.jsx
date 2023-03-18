@@ -5,29 +5,29 @@ export default function Product({ img, title, discount, priceCommon, priceDiscou
   return (
     <div>
       {/* <!-- Карточка товара --> */}
-      <div class="card">
+      <div className="card">
         {/* <!-- Верхняя часть --> */}
-        <div class="card__top">
+        <div className="card__top">
           {/* <!-- Изображение-ссылка товара --> */}
-          <a href="#" class="card__image">
+          <a href="#" className="card__image">
             <img src={img} alt={title} />
           </a>
           {/* <!-- Скидка на товар --> */}
-          <div class="card__label">{discount}</div>
+          <div className="card__label">{discount}</div>
         </div>
         {/* <!-- Нижняя часть --> */}
-        <div class="card__bottom">
+        <div className="card__bottom">
           {/* <!-- Цены на товар (с учетом скидки и без)--> */}
-          <div class="card__prices">
-            <div class="card__price card__price--discount">{priceDiscount}</div>
-            <div class="card__price card__price--common">{priceCommon}</div>
+          <div className="card__prices">
+            <div className="card__price card__price--discount">{priceDiscount}</div>
+            <div className="card__price card__price--common">{priceCommon}</div>
           </div>
           {/* <!-- Ссылка-название товара --> */}
-          <a href="#" class="card__title">
+          <a href="#" className="card__title">
             {title}
           </a>
           {/* <!-- Кнопка добавить в корзину --> */}
-          <button class="card__add">В корзину</button>
+          <button className="card__add">В корзину</button>
         </div>
       </div>
     </div>

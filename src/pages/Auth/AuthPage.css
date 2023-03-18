@@ -23,6 +23,7 @@
 input[type="text"],
 input[type="password"] {
   width: 241px;
+  outline: none;
 }
 
 .form__buttons {

@@ -10,3 +10,15 @@
   row-gap: 40px; /* Отступ между рядами */
   margin: 0 auto;
 }
+.btn__cards {
+  padding: 10px;
+  background: #3369f3;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.out{
+  background: #bf1717;
+}

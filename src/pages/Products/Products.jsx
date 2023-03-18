@@ -1,9 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Product from "../../components/Product/Product";
 import ProductImg from "../../images/product.svg";
 import "./Products.css";
 
 export default function Products() {
+  const navigate = useNavigate();
+
   const products = [
     {
       id: 1,
@@ -38,11 +41,19 @@ export default function Products() {
       priceDiscount: 90000,
     },
   ];
+
+  const exit = () => navigate("/");
+  const goTable = () => navigate("/table");
+
   return (
-    <div className="cards">
-      {products.map((product) => {
-        return <Product key={product.id} {...product}/>;
-      })}
-    </div>
+    <>
+      <button className="btn__cards out" onClick={exit}>Выйти</button>
+      <button className="btn__cards" onClick={goTable}>Таблица</button>
+      <div className="cards">
+        {products.map((product) => {
+          return <Product key={product.id} {...product} />;
+        })}
+      </div>
+    </>
   );
 }
