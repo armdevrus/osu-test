@@ -6,6 +6,10 @@ export default function AuthPage() {
     const [text, setText] = useState('');
     const [password, setPassword] = useState('');
 
+    const handleResetPassword = (e) => {
+      e.preventDefault()
+    }
+
   return (
     <div className="form__main">
       <form className="form__block">
@@ -26,7 +30,7 @@ export default function AuthPage() {
         </div>
         <div className="form__buttons">
           <input type="submit" value="Авторизоваться" />
-          <a href="/" className="form__forgetPass">
+          <a href="/" className="form__forgetPass" onClick={handleResetPassword}>
             Забыли пароль?
           </a>
         </div>
